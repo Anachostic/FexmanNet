@@ -1,0 +1,986 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmpType" xml:space="preserve">
+    <value>Off
+Stack
+Combo
+Tube</value>
+  </data>
+  <data name="AttackTime" xml:space="preserve">
+    <value>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+12
+14
+16
+18
+20
+23
+26
+30
+35
+40</value>
+  </data>
+  <data name="CompressionRatio" xml:space="preserve">
+    <value>1.0
+1.5
+2.0
+3.0
+5.0
+7.0
+10.0
+20.0</value>
+  </data>
+  <data name="DelayTime200" xml:space="preserve">
+    <value>0.1ms
+1.7ms
+3.2ms
+4.8ms
+6.4ms
+8.0ms
+9.5ms
+11.1ms
+12.7ms
+14.3ms
+15.8ms
+17.4ms
+19.0ms
+20.6ms
+22.1ms
+23.7ms
+25.3ms
+26.9ms
+28.4ms
+30.0ms
+31.6ms
+33.2ms
+34.7ms
+36.3ms
+37.9ms
+39.5ms
+41.0ms
+42.6ms
+44.2ms
+45.7ms
+47.3ms
+48.9ms
+50.5ms
+52.0ms
+53.6ms
+55.2ms
+56.8ms
+58.3ms
+59.9ms
+61.5ms
+63.1ms
+64.6ms
+66.2ms
+67.8ms
+69.4ms
+70.9ms
+72.5ms
+74.1ms
+75.7ms
+77.2ms
+78.8ms
+80.4ms
+81.9ms
+83.5ms
+85.1ms
+86.7ms
+88.2ms
+89.8ms
+91.4ms
+93.0ms
+94.5ms
+96.1ms
+97.7ms
+99.3ms</value>
+  </data>
+  <data name="DelayTime400" xml:space="preserve">
+    <value>0.1ms
+0.3ms
+0.4ms
+0.6ms
+0.7ms
+0.9ms
+1.0ms
+1.2ms
+1.4ms
+1.5ms
+1.7ms
+1.8ms
+2.0ms
+2.1ms
+2.3ms
+2.5ms
+2.6ms
+2.8ms
+2.9ms
+3.1ms
+3.2ms
+3.4ms
+3.5ms
+3.7ms
+3.9ms
+4.0ms
+4.2ms
+4.3ms
+4.5ms
+4.6ms
+4.8ms
+5.0ms
+5.1ms
+5.3ms
+5.4ms
+5.6ms
+5.7ms
+5.9ms
+6.1ms
+6.2ms
+6.4ms
+6.5ms
+6.7ms
+6.8ms
+7.0ms
+100.9ms
+104.0ms
+107.2ms
+110.3ms
+113.5ms
+116.6ms
+119.8ms
+122.9ms
+126.1ms
+129.2ms
+132.4ms
+135.5ms
+138.6ms
+141.8ms
+144.9ms
+148.1ms
+151.2ms
+154.4ms
+157.5ms
+160.7ms
+163.8ms
+167.0ms
+170.1ms
+173.3ms
+176.4ms
+179.6ms
+182.7ms
+185.9ms
+189.0ms
+192.2ms
+195.3ms
+198.5ms
+201.6ms
+204.8ms
+207.9ms
+211.1ms
+214.2ms
+217.4ms
+220.5ms
+223.7ms
+226.8ms
+230.0ms
+233.1ms
+236.3ms
+239.4ms
+242.6ms
+245.7ms
+248.9ms
+252.0ms
+255.2ms
+258.3ms
+261.5ms
+264.6ms
+267.7ms
+270.9ms
+274.0ms
+277.2ms
+280.3ms
+283.5ms
+286.6ms
+289.8ms
+292.9ms
+296.1ms
+299.2ms
+302.4ms
+305.5ms
+308.7ms
+311.8ms
+315.0ms
+318.1ms
+321.3ms
+324.4ms
+327.6ms
+330.7ms
+333.9ms
+337.0ms
+340.2ms
+343.3ms
+346.5ms
+349.6ms
+352.8ms
+355.9ms
+359.1ms
+362.2ms
+365.4ms
+368.5ms
+371.7ms
+374.8ms
+378.0ms
+381.1ms
+384.3ms
+387.4ms
+390.6ms
+393.7ms
+396.9ms
+400.0ms</value>
+  </data>
+  <data name="EarlyReflectionType" xml:space="preserve">
+    <value>S-H
+L-H
+Rdm
+Rvs
+Plt
+Spr</value>
+  </data>
+  <data name="EQFrequency" xml:space="preserve">
+    <value>THRU
+22hz
+25hz
+28hz
+32hz
+36hz
+40hz
+45hz
+50hz
+56hz
+63hz
+70hz
+80hz
+90hz
+100hz
+110hz
+125hz
+140hz
+160hz
+180hz
+200hz
+225hz
+250hz
+280hz
+315hz
+355hz
+400hz
+450hz
+500hz
+560hz
+630hz
+700hz
+800hz
+900hz
+1.0khz
+1.1khz
+1.2khz
+1.4khz
+1.6khz
+1.8khz
+2.0khz
+2.2khz
+2.5khz
+2.8khz
+3.2khz
+3.6khz
+4.0khz
+4.5khz
+5.0kz
+5.6k
+6.3k
+7.0k
+8.0k
+9.0k
+10.0k
+11.0k
+12.0k
+14.0k
+16.0k
+18.0k
+THRU</value>
+  </data>
+  <data name="FilterType" xml:space="preserve">
+    <value>Thru
+PwrBs
+Radio
+TelePh
+Clean
+Low</value>
+  </data>
+  <data name="GateType" xml:space="preserve">
+    <value>TypeA
+TypeB</value>
+  </data>
+  <data name="InputMode" xml:space="preserve">
+    <value>Mono
+Stereo</value>
+  </data>
+  <data name="InputSelect" xml:space="preserve">
+    <value>Left
+Right
+L+R</value>
+  </data>
+  <data name="LFOFrequency" xml:space="preserve">
+    <value>0.00
+0.04
+0.08
+0.13
+0.17
+0.21
+0.25
+0.29
+0.34
+0.38
+0.42
+0.46
+0.51
+0.55
+0.59
+0.63
+0.67
+0.72
+0.76
+0.80
+0.84
+0.88
+0.93
+0.97
+1.01
+1.05
+1.09
+1.14
+1.18
+1.22
+1.26
+1.30
+1.35
+1.39
+1.43
+1.47
+1.51
+1.56
+1.60
+1.64
+1.68
+1.72
+1.77
+1.81
+1.85
+1.89
+1.94
+1.98
+2.02
+2.06
+2.10
+2.15
+2.19
+2.23
+2.27
+2.31
+2.36
+2.40
+2.44
+2.48
+2.52
+2.57
+2.61
+2.65
+2.69
+2.78
+2.86
+2.94
+3.03
+3.11
+3.20
+3.28
+3.37
+3.45
+3.53
+3.62
+3.70
+3.87
+4.04
+4.21
+4.37
+4.54
+4.71
+4.88
+5.05
+5.22
+5.38
+5.55
+5.72
+6.06
+6.39
+6.73
+7.07
+7.40
+7.74
+8.08
+8.41
+8.75
+9.08
+9.42
+9.76
+10.1
+10.8
+11.4
+12.1
+12.8
+13.5
+14.1
+14.8
+15.5
+16.2
+16.8
+17.5
+18.2
+19.5
+20.9
+22.2
+23.6
+24.9
+26.2
+27.6
+28.9
+30.3
+31.6
+33.0
+34.3
+37.0
+39.7</value>
+  </data>
+  <data name="ModulationDelayOffset" xml:space="preserve">
+    <value>0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+1.7
+1.8
+1.9
+2.0
+2.1
+2.2
+2.3
+2.4
+2.5
+2.6
+2.7
+2.8
+2.9
+3.0
+3.1
+3.2
+3.3
+3.4
+3.5
+3.6
+3.7
+3.8
+3.9
+4.0
+4.1
+4.2
+4.3
+4.4
+4.5
+4.6
+4.7
+4.8
+4.9
+5.0
+5.1
+5.2
+5.3
+5.4
+5.5
+5.6
+5.7
+5.8
+5.9
+6.0
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+6.7
+6.8
+6.9
+7.0
+7.1
+7.2
+7.3
+7.4
+7.5
+7.6
+7.7
+7.8
+7.9
+8.0
+8.1
+8.2
+8.3
+8.4
+8.5
+8.6
+8.7
+8.8
+8.9
+9.0
+9.1
+9.2
+9.3
+9.4
+9.5
+9.6
+9.7
+9.8
+9.9
+10.0
+11.1
+12.2
+13.3
+14.4
+15.5
+17.1
+18.6
+20.2
+21.8
+23.3
+24.9
+26.5
+28.0
+29.6
+31.2
+32.8
+34.3
+35.9
+37.5
+39.0
+40.6
+42.2
+43.7
+45.3
+46.9
+48.4
+50.0</value>
+  </data>
+  <data name="OffOn" xml:space="preserve">
+    <value>Off
+On</value>
+  </data>
+  <data name="OutputPhase" xml:space="preserve">
+    <value>Normal
+Inverse</value>
+  </data>
+  <data name="PanDirection" xml:space="preserve">
+    <value>L&lt;&gt;R
+L&gt;R
+L&lt;R
+Lturn
+Rturn
+L/R</value>
+  </data>
+  <data name="ReleaseTime" xml:space="preserve">
+    <value>10
+15
+25
+35
+45
+55
+65
+75
+85
+100
+115
+140
+170
+230
+340
+680</value>
+  </data>
+  <data name="ReverbTime" xml:space="preserve">
+    <value>0.3s
+0.4s
+0.5s
+0.6s
+0.7s
+0.8s
+0.9s
+1.0s
+1.1s
+1.2s
+1.3s
+1.4s
+1.5s
+1.6s
+1.7s
+1.8s
+1.9s
+2.0s
+2.1s
+2.2s
+2.3s
+2.4s
+2.5s
+2.6s
+2.7s
+2.8s
+2.9s
+3.0s
+3.1s
+3.2s
+3.3s
+3.4s
+3.5s
+3.6s
+3.7s
+3.8s
+3.9s
+4.0s
+4.1s
+4.2s
+4.3s
+4.4s
+4.5s
+4.6s
+4.7s
+4.8s
+4.9s
+5.0s
+5.5s
+6.0s
+6.5s
+7.0s
+7.5s
+8.0s
+8.5s
+9.0s
+9.5s
+10.0s
+11.0s
+12.0s
+13.0s
+14.0s
+15.0s
+16.0s
+17.0s
+18.0s
+19.0s
+20.0s
+25.0s
+30.0s</value>
+  </data>
+  <data name="ReverbWDH" xml:space="preserve">
+    <value>0.5m
+0.8m
+1.0m
+1.3m
+1.5m
+1.8m
+2.0m
+2.3m
+2.6m
+2.8m
+3.1m
+3.3m
+3.6m
+3.9m
+4.1m
+4.4m
+4.6m
+4.9m
+5.2m
+5.4m
+5.7m
+5.9m
+6.2m
+6.5m
+6.7m
+7.0m
+7.2m
+7.5m
+7.8m
+8.0m
+8.3m
+8.6m
+8.8m
+9.1m
+9.4m
+9.6m
+9.9m
+10.2m
+10.4m
+10.7m
+11.0m
+11.2m
+11.5m
+11.8m
+12.1m
+12.3m
+12.6m
+12.9m
+13.1m
+13.4m
+13.7m
+14.0m
+14.2m
+14.5m
+14.8m
+15.1m
+15.4m
+15.6m
+15.9m
+16.2m
+16.5m
+16.8m
+17.1m
+17.3m
+17.6m
+17.9m
+18.2m
+18.5m
+18.8m
+19.1m
+19.4m
+19.7m
+20.0m
+20.2m
+20.5m
+20.8m
+21.1m
+21.4m
+21.7m
+22.0m
+22.4m
+22.7m
+23.0m
+23.3m
+23.6m
+23.9m
+24.2m
+24.5m
+24.9m
+25.2m
+25.5m
+25.8m
+26.1m
+26.5m
+26.8m
+27.1m
+27.5m
+27.8m
+28.1m
+28.5m
+28.8m
+29.2m
+29.5m
+29.9m
+30.2m</value>
+  </data>
+  <data name="RoomSize" xml:space="preserve">
+    <value>0.1
+0.3
+0.4
+0.6
+0.7
+0.9
+1.0
+1.2
+1.4
+1.5
+1.7
+1.8
+2.0
+2.1
+2.3
+2.5
+2.6
+2.8
+2.9
+3.1
+3.2
+3.4
+3.5
+3.7
+3.9
+4.0
+4.2
+4.3
+4.5
+4.6
+4.8
+5.0
+5.1
+5.3
+5.4
+5.6
+5.7
+5.9
+6.1
+6.2
+6.4
+6.5
+6.7
+6.8
+7.0</value>
+  </data>
+  <data name="VowelSound" xml:space="preserve">
+    <value>A
+I
+U
+E
+O</value>
+  </data>
+</root>

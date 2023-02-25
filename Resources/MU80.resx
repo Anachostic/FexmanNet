@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChorusEffects" xml:space="preserve">
+    <value>0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,No Effect
+65,0,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus1
+65,1,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus2
+65,2,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus3
+66,0,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste1
+66,1,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste2
+66,2,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste3
+67,0,38|39|10|41|0|21|22|23|24|6|0|0|0|44|0|0,Flanger1
+67,1,38|39|10|41|0|21|22|23|24|6|0|0|0|44|0|0,Flanger2
+68,0,38|39|41|0|0|21|22|23|24|6|52|53|64|0|0|0,Symphonic
+72,0,38|39|48|10|0|21|22|23|24|6|49|78|0|0|0|0,Phaser 1</value>
+  </data>
+  <data name="EffectParameters" xml:space="preserve">
+    <value>0,1,No Parameter,,
+0,69,Reverb Time,RvbTim,ReverbTime
+0,10,Diffusion,Diffus,
+0,63,Initial Delay,IniDly,DelayTime200
+0,52,HPF Cutoff,HPFCut,EQFrequency
+34,60,LPF Cutoff,LPFCut,EQFrequency
+1,127,Dry/Wet,DryWet,
+0,63,Rev Delay,RevDly,DelayTime200
+0,4,Density,Densty,
+1,127,Er/Rev Balance,E/RBal,
+1,127,Feedback Level,Feedbk,
+0,37,Width,Width,ReverbWDH
+0,73,Height,Height,ReverbWDH
+0,104,Depth,Depth,ReverbWDH
+0,30,Wall Vary,WalVar,
+1,14860,Left Delay,LftDly,DotOne
+1,14860,Right Delay,RgtDly,DotOne
+1,14860,Center Delay,CtrDly,DotOne
+1,14860,Feedback Delay,F/BDly,DotOne
+1,127,Center Level,CtrLev,
+1,10,High Damp,HiDamp,
+4,40,EQ Low Freq,EQLoFr,EQFrequency
+52,76,EQ Low Gain,EQLoGn,
+28,58,EQ High Freq,EQHiFr,EQFrequency
+52,76,EQ High Gain,EQHiGn,
+1,14860,Feedback Delay 2,FBDly2,DotOne
+1,7430,Left Delay 2,LfDly2,DotOne
+1,127,Left Feedback Level,LfFBLv,
+1,7430,Right Delay 2,RtDly2,DotOne
+1,127,Right Feedback Level,RtFBLv,
+0,127,Delay 2 Level,Dl2Lev,
+1,7430,Left&gt;Right Delay,L&gt;RDly,DotOne
+1,7430,Right&gt;Left Delay,R&gt;LDly,DotOne
+0,2,Input Select,InpSel,InputSelect
+0,5,ER Type,ERType,EarlyReflectionType
+0,44,Room Size,RoomSz,RoomSize
+0,10,Liveness,Livens,
+0,1,Gate Type,GateTp,GateType
+0,127,LFO Frequency,LFOFrq,LFOFrequency
+0,127,LFO Depth,LFODpt,
+0,1,Input Mode,InMode,InputMode
+0,127,Delay Offset,DlyOff,ModulationDelayOffset
+0,127,AM Depth,AMDpth,
+0,127,PM Depth,PMDpth,
+4,124,LFO Phase Difference,LFOPhD,
+0,127,L&gt;R Depth,L&gt;RDpt,
+0,127,F&gt;R Depth,F&gt;RDpt,
+0,5,Pan Direction,PanDir,PanDirection
+0,127,Phase Shift Offset,PhShft,
+3,10,Stage,Stage,
+0,127,Drive,Drive,
+0,127,Output Level,OutLvl,
+28,54,EQ Mid Frequency,EQMdFr,EQFrequency
+52,76,EQ Mid Gain,EQMdGn,
+0,127,Edge(clip curve),Edge,
+0,3,Amp Type,AmpTyp,AmpType
+0,127,Cutoff Frequency Offset,CutFrO,
+10,120,Resonance,Resonc,
+40,88,Pitch,Pitch,
+14,114,Fine 1,Fine1,
+0,26,Low Adjust,LowAdj,
+0,26,High Adjust,HiAdj,
+0,44,Room Size,RoomSz,RoomSize
+0,127,Delay Time,DlyTim,DelayTime400
+10,120,EQ Mid Width,EQMdWt,
+0,19,Attack,Attack,AttackTime
+0,6,Bit Assign,BitAssn,
+14,54,Crossover Frequency,XovrFreq,
+1,7430,Lch Delay,LchDly,DotOne
+1,7430,Rch Delay,RchDly,DotOne
+0,3,Density,Densty,
+0,127,Initial Delay,IniDly,DelayTime200
+0,1,Output Phase,OutPhz,OutputPhase
+0,127,Rotor Speed,RtrSpd,
+0,127,Drive High,DrvHi,
+0,127,Drive Low,DrvLo,
+1,127,Low/High,LoHigh,
+0,60,Mic L/R Angle,MicAng,
+0,1,Diffusion,Diffus,InputMode
+0,15,Release,Relese,ReleaseTime
+79,121,Threshold,Thrshld,
+0,7,Ratio,Ratio,CompressionRatio
+0,127,Sensitivity,Senstv,
+14,114,Fine 2,Fine2,
+1,127,Pan 1,Pan1,
+1,127,Pan 2,Pan2,
+0,127,Output Level 1,OutLvl1,
+0,127,Output Level 2,OutLvl2,
+0,127,Mix Level,MixLvl,
+0,4,Vowel,Vowel,VowelSound
+1,62,Move Speed,MovSpd,
+0,127,Sampling Frequency Control,SmFqCn,
+1,127,Word Length,WrdLen,
+0,18,Output Gain,OutGn,
+0,5,Filter Type,FltTyp,FilterType
+10,120,LPF Resonance,LPFRes,
+0,6,Bit Assign,BitAsn,
+0,1,Emphasis,Ephsis,OffOn
+1,14860,Delay Time,DlyTim,DotOne
+1,127,Delay Mix,DlyMix,
+52,67,Release,Release,
+14,114,Detune,Detune,
+1,127,Left Ch Init Delay,LIniDly,DelayTime200
+1,127,Right Ch Init Delay,RIniDly,DelayTime200</value>
+  </data>
+  <data name="ReverbEffects" xml:space="preserve">
+    <value>0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,No Effect
+1,0,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Hall1
+1,1,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Hall2
+2,0,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Room1
+2,1,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Room2
+2,2,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Room3
+3,0,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Stage1
+3,1,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Stage2
+4,0,1|2|3|4|5|0|0|0|0|6|7|8|9|20|10|0,Plate
+16,0,1|2|3|4|5|11|12|13|14|6|7|8|9|20|10|0,White Room
+17,0,1|2|3|4|5|11|12|13|14|6|7|8|9|20|10|0,Tunnel
+18,0,1|2|3|4|5|11|12|13|14|6|7|8|9|20|10|0,Canyon
+19,0,1|2|3|4|5|11|12|13|14|6|7|8|9|20|10|0,Basement</value>
+  </data>
+  <data name="VariationEffects" xml:space="preserve">
+    <value>64,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,Thru
+0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,No Effect
+1,0,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Hall1
+1,1,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Hall2
+2,0,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Room1
+2,1,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Room2
+2,2,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Room3
+3,0,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Stage1
+3,1,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Stage2
+4,0,1|2|3|4|5|0|0|0|0|6|7|8|9|68|10|0,Plate
+5,0,15|16|17|18|10|19|20|0|0|6|0|0|21|22|23|24,Delay L/C/R
+6,0,15|16|18|25|10|20|0|0|0|6|0|0|21|22|23|24,Delay L/R
+7,0,68|27|69|29|20|26|28|30|0|6|0|0|21|22|23|24,Echo
+8,0,31|32|10|33|20|0|0|0|0|6|0|0|21|22|23|24,Cross Delay
+9,0,34|35|2|3|10|4|5|0|0|6|36|70|20|0|0|0,Early Reflect 1
+9,1,34|35|2|3|10|4|5|0|0|6|36|70|20|0|0|0,Early Reflect 2
+10,0,37|62|2|71|10|4|5|0|0|6|36|8|20|0|0|0,Gate
+11,0,37|62|2|71|10|4|5|0|0|6|36|8|20|0|0|0,Reverse Gate
+20,0,63|10|4|5|0|0|0|0|0|6|0|0|0|0|0|0,Karaoke 1
+20,1,63|10|4|5|0|0|0|0|0|6|0|0|0|0|0|0,Karaoke 2
+20,2,63|10|4|5|0|0|0|0|0|6|0|0|0|0|0|0,Karaoke 3
+101,0,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus 1
+101,1,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus 2
+101,2,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Chorus 3
+66,0,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste 1
+66,1,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste 2
+66,2,38|39|10|41|0|21|22|23|24|6|0|0|0|0|40|0,Celeste 3
+67,0,38|39|10|41|0|21|22|23|24|6|0|0|0|44|0|0,Flanger 1
+67,1,38|39|10|41|0|21|22|23|24|6|0|0|0|44|0|0,Flanger 2
+68,0,38|39|41|0|0|21|22|23|24|6|52|53|64|0|0|0,Symphonic
+69,0,38|39|0|0|0|21|22|23|24|6|0|0|0|0|0|0,Rotary Speaker
+70,0,38|42|43|0|0|21|22|23|24|0|0|0|0|44|40|0,Tremolo
+71,0,38|45|46|47|0|21|22|23|24|0|52|53|64|0|0|0,Auto Pan
+72,0,38|39|48|10|0|21|22|23|24|6|49|78|0|0|0|0,Phaser 1
+73,0,50|21|22|5|51|0|52|53|64|6|54|0|0|0|0|0,Distortion
+74,0,50|21|22|5|51|0|52|53|64|6|54|0|0|0|0|0,Overdrive
+75,0,50|55|5|51|0|0|0|0|0|6|54|0|0|0|0|0,Amp Simulator
+76,0,22|52|53|64|24|0|0|0|0|0|0|0|0|0|40|0,3 Band EQ (Mono)
+77,0,21|22|23|24|0|0|0|0|0|0|0|0|0|0|0|0,2 Band EQ (Stereo)
+78,0,38|39|56|57|0|21|22|23|24|6|50|0|0|0|0|0,Auto Wah
+80,0,58|3|59|83|10|0|0|0|0|6|84|86|85|87|0|0,Pitch Change 1
+81,0,4|50|88|0|0|0|0|0|0|0|0|0|0|0|0|0,Aural Exciter
+82,0,82|56|57|0|0|21|22|23|24|6|50|0|0|0|0|0,Touch Wah 1
+82,1,82|56|57|0|0|21|22|23|24|6|50|0|0|0|0|0,Touch Wah+Distortion
+83,0,75|76|80|81|51|0|0|0|0|0|0|0|0|0|0|0,Compressor
+84,0,75|76|80|51|0|0|0|0|0|0|0|0|0|0|0|0,Noise Gate</value>
+  </data>
+</root>
