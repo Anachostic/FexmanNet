@@ -345,12 +345,12 @@ Public Class YamahaMIDI
 
     End Sub
 
-    Private Shared Sub SendSysEx(device As MidiOut, msg() As Byte)
+    Private Shared Sub SendSysEx(device As MidiOut, msg() As Byte, Optional debugMode As Boolean = False)
         SyncLock lock
             device.SendBuffer(msg)
         End SyncLock
 
-        If My.Settings.LastDebugMode Then
+        If debugMode Then
             For Each b As Byte In msg
                 Debug.Write(b.ToString("x2") & " ")
             Next

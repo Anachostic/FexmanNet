@@ -9,15 +9,33 @@ Public Class frmMain
     Private presets As New List(Of String)
     Private isShiftDown As Boolean
     Private patchButtons As New List(Of Button)
+    Private _settings As Settings
 
     Private ReadOnly Property EditForm As frmEditEffect
         Get
             If _editForm Is Nothing Then
                 _editForm = New frmEditEffect
+                _editForm.Text = $"Edit Patch - {Me.ConfigDescription}"
                 AddHandler _editForm.PatchChanged, AddressOf PatchChangedHandler
             End If
 
             Return _editForm
+        End Get
+    End Property
+
+    Private ReadOnly Property ConfigDescription As String
+        Get
+            Return $"{[Enum].GetName(GetType(Enums.DeviceEnum), Me.Settings.LastDevice)}@{MidiOut.DeviceInfo(Me.Settings.LastDeviceIndex).ProductName}"
+        End Get
+    End Property
+
+    Private ReadOnly Property Settings As Settings
+        Get
+            If _settings Is Nothing Then
+                _settings = Settings.GetInstance
+            End If
+
+            Return _settings
         End Get
     End Property
 
@@ -72,15 +90,15 @@ Public Class frmMain
         If chkSafetyMode.Checked Then
             Dim filename As String
 
-            filename = currentPatch.GetFileName(My.Settings.LastPatchFilePath)
-            If Not String.IsNullOrEmpty(filename) AndAlso IO.File.Exists(IO.Path.Combine(My.Settings.LastPatchFilePath, filename)) Then
+            filename = currentPatch.GetFileName(Me.Settings.LastPatchFilePath)
+            If Not String.IsNullOrEmpty(filename) AndAlso IO.File.Exists(IO.Path.Combine(Me.Settings.LastPatchFilePath, filename)) Then
                 If MsgBox("Do you want to overwrite this patch?", vbYesNo Or MsgBoxStyle.Question) <> MsgBoxResult.Yes Then
                     Exit Sub
                 End If
             End If
         End If
 
-        currentPatch.Save(My.Settings.LastPatchFilePath)
+        currentPatch.Save(Me.Settings.LastPatchFilePath)
 
         lblPatchChanged.Visible = False
 
@@ -114,15 +132,19 @@ Public Class frmMain
     Private Sub InitDevice()
         If device IsNot Nothing Then device.Dispose()
 
-        device = YamahaMIDI.InitializeDevice(My.Settings.LastDeviceIndex)
+        device = YamahaMIDI.InitializeDevice(Me.Settings.LastDeviceIndex)
 
+        Me.Text = $"{My.Application.Info.Title} - {Me.ConfigDescription}"
+        If _editForm IsNot Nothing Then
+            _editForm.Text = $"Edit Patch - {Me.ConfigDescription}"
+        End If
     End Sub
 
     Private Sub LoadPatches()
         lstPresets.Items.Clear()
 
-        If Not String.IsNullOrWhiteSpace(My.Settings.LastPatchFilePath) AndAlso IO.Directory.Exists(My.Settings.LastPatchFilePath) Then
-            For Each item In IO.Directory.GetFiles(My.Settings.LastPatchFilePath, "*.fexpatch")
+        If Not String.IsNullOrWhiteSpace(Me.Settings.LastPatchFilePath) AndAlso IO.Directory.Exists(Me.Settings.LastPatchFilePath) Then
+            For Each item In IO.Directory.GetFiles(Me.Settings.LastPatchFilePath, "*.fexpatch")
                 lstPresets.Items.Add(FexmanPatch.FromFile(item))
             Next
         End If
@@ -130,33 +152,37 @@ Public Class frmMain
     End Sub
 
     Private Sub LoadSettings()
-        chkDebugMode.Checked = My.Settings.LastDebugMode
+        chkDebugMode.Checked = Me.Settings.LastDebugMode
     End Sub
 
     Private Sub SaveSettings()
-        My.Settings.LastDebugMode = chkDebugMode.Checked
+        Dim s As Settings = Settings.GetInstance
+
+        s.LastDebugMode = chkDebugMode.Checked
 
         ' store all presets
         rdoGroup1.Checked = False
         rdoGroup2.Checked = False
         rdoGroup3.Checked = False
         rdoGroup4.Checked = False
-        My.Settings.Presets = New StringCollection
-        My.Settings.Presets.AddRange(presets.ToArray)
+        s.Presets = New List(Of String)
+        s.Presets.AddRange(presets.ToArray)
 
-        My.Settings.Save()
+        s.Save()
 
     End Sub
 
     Private Sub LoadPresets()
-        If My.Settings.Presets Is Nothing Then
+        Dim s As Settings = Settings.GetInstance
+
+        If s.Presets Is Nothing Then
             presets = New List(Of String)
             For i As Integer = 1 To 40
                 presets.Add("")
             Next
 
         Else
-            presets = New List(Of String)(My.Settings.Presets.Cast(Of String))
+            presets = New List(Of String)(Me.Settings.Presets.Cast(Of String))
         End If
 
         rdoGroup1.Checked = True

@@ -12,6 +12,7 @@ Public Class FexmanPatch
     Public Property Variation As New PatchEffect
 
     Shared Function FromFile(path As String) As FexmanPatch
+        Dim s As Settings = Settings.GetInstance
         Dim data As String = IO.File.ReadAllText(path)
         Dim patch As New FexmanPatch
         Dim params As List(Of Integer)
@@ -24,7 +25,7 @@ Public Class FexmanPatch
             Dim choEffects As ChorusEffectCollection
             Dim varEffects As VariationEffectCollection
 
-            device = CType(My.Settings.LastDevice, Enums.DeviceEnum)
+            device = CType(s.LastDevice, Enums.DeviceEnum)
             fxParams = EffectParameterCollection.GetInstance(device)
             rvbEffects = ReverbEffectCollection.GetInstance(fxParams, device)
             choEffects = ChorusEffectCollection.GetInstance(fxParams, device)

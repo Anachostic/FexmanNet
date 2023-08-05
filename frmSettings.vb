@@ -22,48 +22,30 @@ Public Class frmSettings
     End Sub
 
     Private Sub SaveSettings()
-        My.Settings.LastDeviceIndex = lstMIDIOutDevice.SelectedIndex
-        My.Settings.LastPatchFilePath = txtPatchFilePatch.Text
+        Dim s As Settings = Settings.GetInstance
 
-        If rdoMU100.Checked Then My.Settings.LastDevice = Enums.DeviceEnum.MU100
-        If rdoMU80.Checked Then My.Settings.LastDevice = Enums.DeviceEnum.MU80
-        If rdoSW1000.Checked Then My.Settings.LastDevice = Enums.DeviceEnum.SW1000
-        If rdoSW60.Checked Then My.Settings.LastDevice = Enums.DeviceEnum.SW60
+        s.LastDeviceIndex = lstMIDIOutDevice.SelectedIndex
+        s.LastPatchFilePath = txtPatchFilePatch.Text
 
-        My.Settings.Save()
+        If rdoMU100.Checked Then s.LastDevice = Enums.DeviceEnum.MU100
+        If rdoMU80.Checked Then s.LastDevice = Enums.DeviceEnum.MU80
+        If rdoSW1000.Checked Then s.LastDevice = Enums.DeviceEnum.SW1000
+        If rdoSW60.Checked Then s.LastDevice = Enums.DeviceEnum.SW60
+
+        s.Save()
 
     End Sub
 
     Private Sub LoadSettings()
-        lstMIDIOutDevice.SelectedIndex = My.Settings.LastDeviceIndex
-        txtPatchFilePatch.Text = My.Settings.LastPatchFilePath
+        Dim s As Settings = Settings.GetInstance
 
-        Select Case My.Settings.LastDevice
-            Case Enums.DeviceEnum.SW60
-                rdoMU100.Checked = False
-                rdoMU80.Checked = False
-                rdoSW1000.Checked = False
-                rdoSW60.Checked = True
+        lstMIDIOutDevice.SelectedIndex = s.LastDeviceIndex
+        txtPatchFilePatch.Text = s.LastPatchFilePath
 
-            Case Enums.DeviceEnum.SW1000
-                rdoMU100.Checked = False
-                rdoMU80.Checked = False
-                rdoSW1000.Checked = True
-                rdoSW60.Checked = False
-
-            Case Enums.DeviceEnum.MU80
-                rdoMU100.Checked = False
-                rdoMU80.Checked = True
-                rdoSW1000.Checked = False
-                rdoSW60.Checked = False
-
-            Case Enums.DeviceEnum.MU100
-                rdoMU100.Checked = True
-                rdoMU80.Checked = False
-                rdoSW1000.Checked = False
-                rdoSW60.Checked = False
-
-        End Select
+        rdoMU100.Checked = s.LastDevice = Enums.DeviceEnum.MU100
+        rdoMU80.Checked = s.LastDevice = Enums.DeviceEnum.MU80
+        rdoSW1000.Checked = s.LastDevice = Enums.DeviceEnum.SW1000
+        rdoSW60.Checked = s.LastDevice = Enums.DeviceEnum.SW60
 
     End Sub
 

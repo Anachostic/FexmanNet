@@ -52,6 +52,7 @@ Public Class frmEditEffect
     Dim lvlDryMuteChanged As New SliderMuteChanged(AddressOf lvlDry_MuteChanged)
 
     Public Sub New()
+
         InitializeComponent()
 
         lvlLineIn.Mutable = True
@@ -68,9 +69,10 @@ Public Class frmEditEffect
         lvlVariation.Mutable = True
         lvlDry.Mutable = True
 
+        Dim s As Settings = Settings.GetInstance
         Dim deviceType As Enums.DeviceEnum
 
-        deviceType = CType(My.Settings.LastDevice, Enums.DeviceEnum)
+        deviceType = CType(s.LastDevice, Enums.DeviceEnum)
 
         fxParms = EffectParameterCollection.GetInstance(deviceType)
         fxReverb = ReverbEffectCollection.GetInstance(fxParms, deviceType)

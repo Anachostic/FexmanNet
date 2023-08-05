@@ -7,6 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <OptionStrict>On</OptionStrict>
+    <Title>FeXMaN.Net</Title>
   </PropertyGroup>
 
   <ItemGroup>
